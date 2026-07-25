@@ -10,7 +10,12 @@ return {
     "williamboman/mason-lspconfig.nvim",
     lazy = false,
     opts = {
-      auto_install = true,
+      -- `auto_install` is not a mason-lspconfig v2 option and was silently
+      -- ignored; v2 accepts only `ensure_installed` and `automatic_enable`.
+      ensure_installed = { "html", "cssls", "lua_ls", "pyright" },
+      -- Installed servers are auto-enabled via `vim.lsp.enable()` by default,
+      -- which is why servers absent from the list below still attach.
+      automatic_enable = true,
     },
   },
   {
