@@ -85,6 +85,23 @@ return {
         opts = { transparent = true },
     },
     {
+        "Mofiqul/dracula.nvim",
+        lazy = true,
+        opts = { transparent_bg = true },
+    },
+    {
+        "neanias/everforest-nvim",
+        main = "everforest",
+        lazy = true,
+        opts = { transparent_background_level = 2 },
+    },
+    {
+        -- The Snow theme's pick: light and monochrome.
+        "bjarneo/snow.nvim",
+        name = "snow",
+        lazy = true,
+    },
+    {
         -- Omarchy's palette-based colourscheme, used by the Black & White theme.
         "omacom/aether.nvim",
         branch = "v3",
