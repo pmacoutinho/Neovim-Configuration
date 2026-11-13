@@ -4,7 +4,7 @@ return {
     config = function()
         require('lualine').setup({
             options = {
-                theme = 'dracula'
+                theme = vim.g.desktop_theme_lualine or 'dracula'
             }
         })
     end

@@ -16,3 +16,7 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
+
+-- No empty command line under the status bar: it only appears while typing a
+-- command or when a message is shown.
+vim.opt.cmdheight = 0
